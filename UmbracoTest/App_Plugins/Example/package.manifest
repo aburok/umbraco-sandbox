@@ -1,0 +1,26 @@
+﻿{
+    "propertyEditors": [
+        {
+            "alias": "CharLimit",
+            "name": "Char Limit",
+            "editor": {
+                "view": "~/App_Plugins/Example/charlimit.editor.html"
+            },
+            "prevalues": {
+                "fields": [
+                    {
+                        "label": "Characters limit.",
+                        "description": "Limit of characters that user can enter.",
+                        "key": "limit",
+                        "view": "number",
+                        "validation": []
+                    }
+                ]
+            }
+        }
+    ],
+    "javascript": [
+        "~/App_Plugins/Example/charlimit.controller.js"
+    ]
+
+}

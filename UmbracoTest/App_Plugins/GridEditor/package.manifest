@@ -1,0 +1,10 @@
+﻿{
+    "gridEditors": [
+        {
+            "name": "Subheading",
+            "alias": "mySubheading",
+            "view": "textstring",
+            "icon": "icon-grid"
+        }
+    ]
+}

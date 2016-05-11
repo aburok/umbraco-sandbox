@@ -234,3 +234,10 @@ _Pvt_Extensions
 
 # FAKE - F# Make
 .fake/
+
+Umbraco/
+Umbraco_Client/
+App_Data/
+media/
+
+
