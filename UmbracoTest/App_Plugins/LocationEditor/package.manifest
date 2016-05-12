@@ -1,0 +1,15 @@
+﻿{
+    "propertyEditors": [
+        {
+            "alias": "locationEditor",
+            "name": "Location Editor",
+            "editor": {
+                "view": "~/App_Plugins/LocationEditor/location.editor.html",
+                "valueType": "JSON"
+            }
+        }
+    ],
+    "javascript": [
+        "~/App_Plugins/LocationEditor/location.controller.js"
+    ]
+}

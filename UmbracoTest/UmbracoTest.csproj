@@ -304,6 +304,7 @@
   <ItemGroup>
     <Content Include="App_Plugins\Example\charlimit.controller.js" />
     <Content Include="App_Plugins\Example\charlimit.editor.html" />
+    <Content Include="App_Plugins\LocationEditor\location.editor.html" />
     <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.controller.js" />
     <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.htm" />
     <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.resource.js" />
@@ -362,6 +363,7 @@
     <Content Include="Views\SEO.cshtml" />
     <Content Include="App_Plugins\GridEditor\package.manifest" />
     <Content Include="App_Plugins\Example\package.manifest" />
+    <Content Include="App_Plugins\LocationEditor\package.manifest" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -383,6 +385,7 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="App_Plugins\Example\charlimit.controller.ts" />
+    <TypeScriptCompile Include="App_Plugins\LocationEditor\location.controller.ts" />
     <TypeScriptCompile Include="scripts\typings\angularjs\angular-animate.d.ts" />
     <TypeScriptCompile Include="scripts\typings\angularjs\angular-component-router.d.ts" />
     <TypeScriptCompile Include="scripts\typings\angularjs\angular-cookies.d.ts" />
@@ -391,6 +394,9 @@
     <TypeScriptCompile Include="scripts\typings\angularjs\angular-route.d.ts" />
     <TypeScriptCompile Include="scripts\typings\angularjs\angular-sanitize.d.ts" />
     <TypeScriptCompile Include="scripts\typings\angularjs\angular.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\google-maps\google-maps.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\google.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\googlemaps\google.maps.d.ts" />
     <TypeScriptCompile Include="scripts\typings\jquery\jquery.d.ts" />
   </ItemGroup>
   <ItemGroup>
@@ -402,6 +408,9 @@
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>App_Plugins\LocationEditor\package.manifest</ApplicationManifest>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">

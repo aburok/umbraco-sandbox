@@ -3,8 +3,12 @@
         {
             "alias": "CharLimit",
             "name": "Char Limit",
+            "isParameterEditor": true,
             "editor": {
                 "view": "~/App_Plugins/Example/charlimit.editor.html"
+            },
+            "defaultConfig": {
+                "limit": 30
             },
             "prevalues": {
                 "fields": [
