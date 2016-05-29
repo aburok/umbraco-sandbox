@@ -1,0 +1,43 @@
+﻿@using UmbracoTest.Controllers
+@inherits UmbracoViewPage<UmbracoTest.ViewModels.MemberRegisterModel>
+
+@{
+    ViewBag.Title = "MembershipRegistration";
+    Layout = "~/Views/Master.cshtml";
+}
+
+<h2>Membership Registration</h2>
+
+@using (Html.BeginUmbracoForm<MembershipController>(
+                "MemberRegister",
+                FormMethod.Post,
+                new { @class = "validate-form" }))
+{
+    <fieldset>
+        <label>
+            @Html.DisplayNameFor(m => m.GivenNames) <sup>*</sup>
+            @Html.EditorFor(m => m.GivenNames)
+            @Html.ValidationMessageFor(m => m.GivenNames,
+                string.Empty, new { @class = "error" })
+        </label>
+        <label>
+            @Html.DisplayNameFor(m => m.FamilyNames) <sup>*</sup>
+            @Html.EditorFor(m => m.FamilyNames)
+            @Html.ValidationMessageFor(m => m.FamilyNames,
+                string.Empty, new { @class = "error" })
+        </label>
+        <label>
+            @Html.DisplayNameFor(m => m.EmailAddress) <sup>*</sup>
+            @Html.EditorFor(m => m.EmailAddress)
+            @Html.ValidationMessageFor(m => m.EmailAddress,
+                string.Empty, new { @class = "error" })
+        </label>
+        <label>
+            @Html.DisplayNameFor(m => m.EmailAddressConfirmation) <sup>*</sup>
+            @Html.EditorFor(m => m.EmailAddressConfirmation)
+            @Html.ValidationMessageFor(m => m.EmailAddressConfirmation,
+                string.Empty, new { @class = "error" })
+        </label>
+    </fieldset>
+}
+

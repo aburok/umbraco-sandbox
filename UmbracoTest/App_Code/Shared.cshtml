@@ -1,0 +1,17 @@
+﻿@using System.Web.Mvc.Html
+
+@helper RenderFormFieldHelper(
+    System.Web.Mvc.HtmlHelper htmlHelper,
+    string fieldName,
+    bool isRequired)
+{
+    <label>
+        @htmlHelper.DisplayName(fieldName)
+        @if (isRequired)
+        {
+            <sup>*</sup>
+        }
+        @htmlHelper.Editor(fieldName)
+        @htmlHelper.ValidationMessage(fieldName, string.Empty, new { @class = "error" })
+    </label>
+}
