@@ -366,8 +366,9 @@
     <Content Include="App_Plugins\LocationEditor\package.manifest" />
     <Content Include="App_Code\Shared.cshtml" />
     <Content Include="Views\Master.cshtml" />
-    <Content Include="Views\Membership\MembershipRegistration.cshtml" />
-    <Content Include="Views\Membership\MembershipRefactoredRegistration.cshtml" />
+    <Content Include="Views\Partials\Membership\MembershipRegistration.cshtml" />
+    <Content Include="Views\Partials\Membership\MembershipRefactoredRegistration.cshtml" />
+    <Content Include="Views\MembershipRegistrationTemplate.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -413,6 +414,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="scripts\vendors\" />
+    <Folder Include="Views\Membership\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
