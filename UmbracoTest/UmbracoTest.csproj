@@ -378,6 +378,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\RegisterUserController.cs" />
     <Compile Include="Controllers\ValidationController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Validation\PasswordValidator.cs" />
