@@ -388,7 +388,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\MembershipController.cs" />
-    <Compile Include="Helpers\ExpressionUmbracoExtensions.cs" />
     <Compile Include="Helpers\HtmlHelperExtensions.cs" />
     <Compile Include="Helpers\PropertyExpressionExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

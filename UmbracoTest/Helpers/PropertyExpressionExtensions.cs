@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Web.Mvc;
@@ -27,6 +28,14 @@ namespace UmbracoTest.Helpers
                 return false;
 
             return true;
+        }
+        
+        public static bool IsFieldRequired<TModel, TPropertyType>(
+            this Expression<Func<TModel, TPropertyType>> propertyExpression)
+        {
+            var hasRequiredAttribute = 
+                propertyExpression.HasAttribute<TModel, TPropertyType, RequiredAttribute>();
+            return hasRequiredAttribute;
         }
     }
 }
