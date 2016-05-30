@@ -358,12 +358,13 @@
     <Content Include="Config\BaseRestExtensions.config" />
     <Content Include="Config\applications.config" />
     <Content Include="Config\404handlers.config" />
-    <Content Include="Views\2LevelDoc.cshtml" />
     <Content Include="Views\HomePage.cshtml" />
     <Content Include="Views\SEO.cshtml" />
     <Content Include="App_Plugins\GridEditor\package.manifest" />
     <Content Include="App_Plugins\Example\package.manifest" />
     <Content Include="App_Plugins\LocationEditor\package.manifest" />
+    <Content Include="Views\RegisterUserTemplate.cshtml" />
+    <Content Include="Views\Partials\RegisterUser.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -377,7 +378,10 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\ValidationController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Validation\PasswordValidator.cs" />
+    <Compile Include="ViewModels\RegisterUserViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />
@@ -404,6 +408,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="scripts\vendors\" />
+    <Folder Include="Views\Validation\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
