@@ -4,8 +4,10 @@
     Layout = "~/Views/Master.cshtml";
 }
 
-<section class="module module--default copy">
-    <div class="container">
-            @Html.Partial("Membership/MembershipRegistration", new MemberRegisterModel())
-    </div>
-</section>
+<div class="container">
+    @Html.Partial("Membership/MembershipRegistration", new MemberRegisterModel())
+</div>
+
+<div class="container">
+    @Html.Partial("Membership/MembershipRefactoredRegistration", new MemberRegisterModel())
+</div>

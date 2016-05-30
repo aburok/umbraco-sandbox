@@ -327,6 +327,11 @@
     <Content Include="Config\Lang\ru-RU.user.xml" />
     <Content Include="Config\Lang\sv-SE.user.xml" />
     <Content Include="Config\Lang\zh-CN.user.xml" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\fanoe.css" />
+    <Content Include="css\mystyle.css" />
+    <Content Include="css\rte.css" />
+    <Content Include="css\style.css" />
     <Content Include="default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="packages.config" />
@@ -387,7 +392,7 @@
     <Compile Include="Helpers\HtmlHelperExtensions.cs" />
     <Compile Include="Helpers\PropertyExpressionExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ViewModels\MembershipViewModel.cs" />
+    <Compile Include="ViewModels\MemberRegisterModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />

@@ -13,7 +13,6 @@ namespace UmbracoTest.ViewModels
         { }
 
         [DisplayName("First Name")]
-        [Required]
         public virtual string GivenNames { get; set; }
 
         [DisplayName("Last Name")]
