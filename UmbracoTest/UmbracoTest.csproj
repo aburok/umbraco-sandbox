@@ -365,6 +365,7 @@
     <Content Include="App_Plugins\LocationEditor\package.manifest" />
     <Content Include="Views\RegisterUserTemplate.cshtml" />
     <Content Include="Views\Partials\RegisterUser.cshtml" />
+    <Content Include="Views\Master.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

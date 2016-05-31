@@ -14,7 +14,7 @@ namespace UmbracoTest.Controllers
         {
             // both are required
             if (string.IsNullOrWhiteSpace(request.EmailAddress)
-                || string.IsNullOrWhiteSpace(request.Username)
+                || string.IsNullOrWhiteSpace(request.UserName)
                 || string.IsNullOrWhiteSpace(request.Password))
             {
                 return Json(true);
@@ -22,24 +22,21 @@ namespace UmbracoTest.Controllers
 
             var validationResults = PasswordValidator.Validate(
                 request.Password,
-                request.EmailAddress,
-                request.Username);
+                request.UserName,
+                request.EmailAddress);
 
             // if no errors were returned then return true
-            if (validationResults != PasswordMessage.Valid)
+            if (validationResults == PasswordMessage.Valid)
                 return Json(true);
 
-            var passwordRequirements = new UmbracoHelper()
-                .GetDictionaryValue(validationResults.ToString());
-
-            return Json(passwordRequirements);
+            return Json(validationResults.ToString());
         }
     }
 
     public class ValidatePasswordRequest
     {
         public string Password { get; set; }
-        public string Username { get; set; }
+        public string UserName { get; set; }
         public string EmailAddress { get; set; }
     }
 }

@@ -19,7 +19,7 @@ namespace UmbracoTest.Validation
             }
             if (password.Contains(email))
             {
-                return PasswordMessage.ContainsUserName;
+                return PasswordMessage.ContainsEmail;
             }
             if (password.Length < 8)
             {
