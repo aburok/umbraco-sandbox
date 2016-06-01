@@ -236,11 +236,11 @@ _Pvt_Extensions
 
 Umbraco/
 Umbraco_Client/
-App_Data/
+UmbracoTest/App_Data/*
 # but keep local database
-!Umbraco.sdf
+!UmbracoTest/App_Data/Umbraco.sdf
 # and keep the configuration ?
-!umbraco.config
+!UmbracoTest/App_Data/umbraco.config
 media/
 
 
